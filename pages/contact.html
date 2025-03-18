@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <script src="/assets/js/navbar.js" defer></script>
+    <!-- Load navbar -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="relative h-screen w-screen overflow-hidden">
+    <!-- Background Video -->
+    <video
+      class="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+      src="../assets/videos/ScarfAnimation.mp4"
+      autoplay
+      loop
+      muted
+    ></video>
+
+    <!-- Overlay -->
+    <div class="absolute top-0 left-0 w-full h-full bg-black/20"></div>
+
+    <!-- Navbar (Injected by navbar.js) -->
+    <div id="navbar-container" class="relative z-10"></div>
+
+    <!-- Contact Section -->
+    <div
+      class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center text-black"
+    >
+      <div class="future-card p-5">
+        <!-- Placeholder for future card design -->
+        <p class="font-bold text-lg">EMAIL:</p>
+        <p class="text-lg">ARCOFTA@GMAIL.COM</p>
+        <p class="font-bold text-lg mt-4">INSTAGRAM:</p>
+        <p class="text-lg">ARCOF.TA</p>
+      </div>
+    </div>
+  </body>
+</html>
