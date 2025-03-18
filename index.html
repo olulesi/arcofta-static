@@ -9,14 +9,19 @@
       content="A professional static website hosted on AWS S3"
     />
     <link rel="stylesheet" href="assets/css/output.css" />
-    <script defer src="assets/js/index.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+    <script src="/assets/js/footer.js"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body class="bg-gray-100 text-gray-900">
     <div id="navbar-container"></div>
-    <script src="/assets/js/navbar.js"></script>
-    <main class="p-6">
-      <p class="text-lg">This is a static website hosted on AWS S3.</p>
+    <main class="h-[60vh] flex justify-center items-center">
+      <img
+        src="./assets/images/banner.png"
+        alt="Website Banner"
+        class="w-full h-full object-cover"
+      />
     </main>
+    <div id="footer-container"></div>
   </body>
 </html>

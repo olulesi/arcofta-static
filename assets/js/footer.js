@@ -13,7 +13,9 @@ fetch('/pages/footer.html')
     ) {
       footerText.textContent = 'ARCOFTA'
     } else {
-      footerText.innerHTML = 'Arc 1 <br> "From the Ground Up"'
+      footerText.innerHTML = 'ARC 1 <br> "FROM THE GROUND UP"'
+      footerText.style.textTransform = 'uppercase' // Make text uppercase
+      footerText.style.textAlign = 'center' // Center align text
     }
   })
   .catch((error) => console.error('Error loading the footer:', error))
