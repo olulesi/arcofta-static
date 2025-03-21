@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archive</title>
+    <script src="/assets/js/navbar.js" defer></script>
+    <script src="/assets/js/footer.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/js/video-controls.js" defer></script>
+    <!-- <script src="/assets/js/swipeVideo.js" defer></script> -->
+  </head>
+  <body class="relative w-screen h-screen overflow-hidden flex flex-col">
+    <!-- Navbar -->
+    <div id="navbar-container" class="h-[20vh]"></div>
+
+    <!-- Video Container -->
+    <div
+      id="video-container"
+      class="relative h-[60vh] max-w-6xl mx-auto overflow-auto snap-y snap-mandatory rounded-md"
+    >
+      <!-- Video 1 -->
+      <div
+        class="snap-start w-full h-[60vh] flex justify-center items-center relative"
+      >
+        <video
+          id="video-player"
+          class="object-cover h-full w-full opacity-100 transition-opacity duration-500 ease-in-out"
+          src="https://arcofta-assets.s3.eu-west-1.amazonaws.com/BOURBON.mp4"
+          loop
+          muted
+          autoplay
+          playsinline
+        ></video>
+
+        <!-- Expand Button -->
+        <button
+          id="expand-btn"
+          class="expand-btn absolute top-2 right-2 md:hidden invert"
+        >
+          <img src="/assets/icons/expand.svg" alt="Expand" class="w-8 h-8" />
+        </button>
+
+        <!-- Mute Button -->
+        <button id="mute-btn" class="absolute bottom-2 right-2">
+          <img
+            id="mute-icon"
+            src="/assets/icons/mute.svg"
+            alt="Mute"
+            class="w-8 h-8 invert"
+          />
+        </button>
+      </div>
+
+      <!-- Video 2 -->
+      <div
+        class="snap-start w-full h-[60vh] flex justify-center items-center relative"
+      >
+        <video
+          id="video-player"
+          class="object-cover h-full w-full opacity-100 transition-opacity duration-500 ease-in-out"
+          src="https://arcofta-assets.s3.eu-west-1.amazonaws.com/COCAINE.mp4"
+          loop
+          muted
+          autoplay
+          playsinline
+        ></video>
+
+        <!-- Expand Button -->
+        <button id="expand-btn" class="absolute top-2 right-2 md:hidden invert">
+          <img src="/assets/icons/expand.svg" alt="Expand" class="w-8 h-8" />
+        </button>
+
+        <!-- Mute Button -->
+        <button id="mute-btn" class="absolute bottom-2 right-2">
+          <img
+            id="mute-icon"
+            src="/assets/icons/mute.svg"
+            alt="Mute"
+            class="w-8 h-8 invert"
+          />
+        </button>
+      </div>
+
+      <!-- Video 3 -->
+      <div
+        class="snap-start w-full h-[60vh] flex justify-center items-center relative"
+      >
+        <video
+          id="video-player"
+          class="object-cover h-full w-full opacity-100 transition-opacity duration-500 ease-in-out"
+          src="https://arcofta-assets.s3.eu-west-1.amazonaws.com/Sahara.mp4"
+          loop
+          muted
+          autoplay
+          playsinline
+        ></video>
+
+        <!-- Expand Button -->
+        <button id="expand-btn" class="absolute top-2 right-2 md:hidden invert">
+          <img src="/assets/icons/expand.svg" alt="Expand" class="w-8 h-8" />
+        </button>
+
+        <!-- Mute Button -->
+        <button id="mute-btn" class="absolute bottom-2 right-2">
+          <img
+            id="mute-icon"
+            src="/assets/icons/mute.svg"
+            alt="Mute"
+            class="w-8 h-8 invert"
+          />
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+  </body>
+</html>
