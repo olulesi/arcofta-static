@@ -2,7 +2,14 @@
 module.exports = {
   content: ['./index.html', './pages/**/*.html'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Helvetica', 'sans-serif'],
+        helvetica: ['Helvetica', 'sans-serif'],
+        helveticaBold: ['Helvetica-Bold', 'sans-serif'],
+        brand: ['FogtwoNo5', 'cursive'],
+      },
+    },
   },
   plugins: [],
 }

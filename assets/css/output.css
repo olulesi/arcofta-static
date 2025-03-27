@@ -154,7 +154,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Helvetica, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -619,12 +619,12 @@ video {
   margin-top: 1.5rem;
 }
 
-.flex {
-  display: flex;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
-.hidden {
-  display: none;
+.flex {
+  display: flex;
 }
 
 .h-8 {
@@ -663,6 +663,14 @@ video {
   width: 100vw;
 }
 
+.w-\[75\%\] {
+  width: 75%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -682,10 +690,6 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.touch-auto {
-  touch-action: auto;
 }
 
 .snap-y {
@@ -781,6 +785,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -791,13 +800,12 @@ video {
   line-height: 1.25rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .uppercase {
@@ -841,6 +849,48 @@ video {
   transition: opacity 0.5s ease-in-out;
 }
 
+@font-face {
+  font-family: 'FogtwoNo5';
+
+  src: url('../fonts/FogtwoNo5.ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+
+  src: url('../fonts/Helvetica.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica-Bold';
+
+  src: url('../fonts/Helvetica-Bold.ttf') format('ttf');
+
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+
+html {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.helvetica {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.helvetica-bold {
+  font-family: 'Helvetica-Bold', sans-serif;
+}
+
+.brand {
+  font-family: 'FogtwoNo5';
+  letter-spacing: -0.25rem;
+  font-weight: 100;
+}
+
 @media (min-width: 768px) {
   .md\:mt-6 {
     margin-top: 1.5rem;
@@ -858,9 +908,9 @@ video {
     padding: 2rem;
   }
 
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .md\:text-base {
@@ -876,11 +926,6 @@ video {
 
   .lg\:p-20 {
     padding: 5rem;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .lg\:text-lg {

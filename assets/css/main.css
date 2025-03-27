@@ -5,3 +5,41 @@
 video {
   transition: opacity 0.5s ease-in-out;
 }
+
+@font-face {
+  font-family: 'FogtwoNo5';
+  src: url('../fonts/FogtwoNo5.ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/Helvetica.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica-Bold';
+  src: url('../fonts/Helvetica-Bold.ttf') format('ttf');
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+
+html {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.helvetica {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.helvetica-bold {
+  font-family: 'Helvetica-Bold', sans-serif;
+}
+
+.brand {
+  font-family: 'FogtwoNo5';
+  letter-spacing: -0.25rem;
+  font-weight: 100;
+}
